@@ -1,6 +1,6 @@
 # 🍳 Odin Recipes
 
-Live Preview(https://hephtroncode.github.io/odin-recipes/)
+Live Preview[](https://hephtroncode.github.io/odin-recipes/)
 
 A modern recipe website showcasing delicious culinary creations with a clean, user-friendly interface. Built as part of The Odin Project curriculum to demonstrate HTML, CSS, and responsive web design skills.
 

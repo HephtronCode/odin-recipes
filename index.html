@@ -3,17 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="This is a simple recipe website">
-    <meta name="keywords" content="recipe, food, cooking, delicious, tasty">
-    <title>Odin Recipe</title>
+    <meta name="description" content="Discover our curated collection of unique and delicious recipes at Odin Recipes">
+    <meta name="keywords" content="recipe, food, cooking, delicious, homemade, stout cake, coconut ice cream, tabbouleh">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <title>Odin Recipes - Delicious Homemade Recipes</title>
 </head>
 <body>
-    <h1>Odin Recipes</h1>
-    <br>
-    <ul>
-        <li><a href="./recipes/stout_cake.html">Stout Cake</a></li>
-        <li><a href="./recipes/coconut_milt_cream.html">Coconut Milk Ice Cream</a></li>
-        <li><a href="./recipes/cucumber_tab.html">Cucumber Tabbouleh</a></li>
-    </ul>
-    </body>
+    <nav class="navbar">
+        <div class="nav-content">
+            <a href="/" class="nav-logo">Odin Recipes</a>
+        </div>
+    </nav>
+
+    <main class="home-container">
+        <section class="hero">
+            <h1>Discover Delicious Recipes</h1>
+            <p class="hero-text">Welcome to Odin Recipes! Explore our collection of carefully crafted recipes that bring joy to your kitchen.</p>
+        </section>
+
+        <section class="recipe-grid">
+            <article class="recipe-card">
+                <div class="recipe-card-image">
+                    <img src="./img/Chocolate-Stout-Cake.jpg" alt="Decadent Chocolate Stout Cake">
+                </div>
+                <div class="recipe-card-content">
+                    <h2>Stout Cake</h2>
+                    <p>A rich chocolate cake made with stout beer and topped with chocolate caramel frosting.</p>
+                    <a href="./recipes/stout_cake.html" class="recipe-link">View Recipe →</a>
+                </div>
+            </article>
+
+            <article class="recipe-card">
+                <div class="recipe-card-image">
+                    <img src="./img/coconut_milk_cream.jpg" alt="Creamy Coconut Milk Ice Cream">
+                </div>
+                <div class="recipe-card-content">
+                    <h2>Coconut Milk Ice Cream</h2>
+                    <p>Smooth and creamy dairy-free ice cream made with coconut milk.</p>
+                    <a href="./recipes/coconut_milt_cream.html" class="recipe-link">View Recipe →</a>
+                </div>
+            </article>
+
+            <article class="recipe-card">
+                <div class="recipe-card-image">
+                    <img src="./img/cucumber_tab.jpg" alt="Fresh Cucumber Tabbouleh">
+                </div>
+                <div class="recipe-card-content">
+                    <h2>Cucumber Tabbouleh</h2>
+                    <p>A refreshing Middle Eastern salad with fresh herbs and cucumber.</p>
+                    <a href="./recipes/cucumber_tab.html" class="recipe-link">View Recipe →</a>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-content">
+            <p>&copy; 2025 Odin Recipes. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
 </html>

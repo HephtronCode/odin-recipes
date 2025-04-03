@@ -3,48 +3,94 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/stout.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <title>Stout Cake Recipe</title>
 </head>
 <body>
-    <h1>Stout Cake Recipe</h1>
-    <a href="../index.html">Home</a>
-    <br>
-    <br>
-    <img src="../img/Chocolate-Stout-Cake.jpg" alt="a picture of a Chocolate stout cake">
-    <br>
-    <hr>
-    <h2>Description</h2>
-    <p>This moist chocolate stout cake with chocolate caramel frosting gains intensity and flavor from stout beer. It pairs beautifully with the rich, luscious chocolate-caramel frosting. Give yourself plenty of time to make this cake—it requires several hours of cooling time.</p>
-    <br>
-    <hr>
-    <h3>Ingredients</h3>
-    <ul>
-        <li>1 cup stout beer</li>
-        <li>1 cup unsalted butter</li>
-        <li>3/4 cup unsweetened cocoa powder</li>
-        <li>2 cups all-purpose flour</li>
-        <li>2 cups sugar</li>
-        <li>1 1/2 teaspoons baking soda</li>
-        <li>3/4 teaspoon salt</li>
-        <li>2 large eggs</li>
-        <li>2/3 cup sour cream</li>
-        <li>6 ounces semisweet chocolate chips</li>
-        <li>6 tablespoons heavy cream</li>
-        <li>1 teaspoon light corn syrup</li>
-    </ul>
-    <br>
-    <hr>
-    <h3>Directions</h3>
-    <ol>
-        <li>Preheat oven to 350°F. Grease a 9-inch round cake pan and line the bottom with parchment paper.</li>
-        <li>Bring stout and butter to a simmer in a large saucepan over medium heat. Add cocoa powder and whisk until mixture is smooth. Cool slightly.</li>
-        <li>Whisk flour, sugar, baking soda, and salt in a large bowl. Using an electric mixer, beat eggs and sour cream in another large bowl until smooth. Add stout mixture to egg mixture and beat just to combine. Add flour mixture and beat briefly on slow speed. Using a rubber spatula, fold batter until completely combined. Pour batter into prepared pan. Bake cake until tester inserted into center comes out clean, about 35 minutes. Transfer cake to rack; cool completely in the pan, then turn cake out onto rack for frosting.</li>
-        <li>Place chocolate chips in a medium bowl. Bring cream and corn syrup to a simmer in a small saucepan; pour over chocolate chips. Let sit for 2 minutes; whisk until smooth. Let frosting sit at room temperature until slightly thickened, about 1 hour. Pour over cake; let stand until frosting is set, about 4 hours.</li>
-    </ol>
-    <br>
-    <hr>
-    <footer>
-        <p>&copy; 2025 Odin Recipes</p>
+    <nav class="navbar">
+        <div class="nav-content">
+            <a href="../index.html" class="nav-logo">Odin Recipes</a>
+            <a href="../index.html" class="nav-link">Home</a>
+        </div>
+    </nav>
+
+    <main class="recipe-container">
+        <article class="recipe-card">
+            <header class="recipe-header">
+                <h1>Chocolate Stout Cake</h1>
+                <div class="recipe-meta">
+                    <span class="recipe-time">Prep: 30 mins</span>
+                    <span class="recipe-time">Cook: 35 mins</span>
+                    <span class="recipe-time">Total: ~5 hrs</span>
+                </div>
+            </header>
+
+            <div class="recipe-image-container">
+                <img src="../img/Chocolate-Stout-Cake.jpg" alt="A rich and decadent Chocolate stout cake with glossy frosting" class="recipe-image">
+            </div>
+
+            <section class="recipe-section">
+                <h2>Description</h2>
+                <p>This moist chocolate stout cake with chocolate caramel frosting gains intensity and flavor from stout beer. It pairs beautifully with the rich, luscious chocolate-caramel frosting. Give yourself plenty of time to make this cake—it requires several hours of cooling time.</p>
+            </section>
+
+            <section class="recipe-section ingredients">
+                <h2>Ingredients</h2>
+                <div class="ingredients-grid">
+                    <ul>
+                        <li><span class="amount">1 cup</span> stout beer</li>
+                        <li><span class="amount">1 cup</span> unsalted butter</li>
+                        <li><span class="amount">3/4 cup</span> unsweetened cocoa powder</li>
+                        <li><span class="amount">2 cups</span> all-purpose flour</li>
+                        <li><span class="amount">2 cups</span> sugar</li>
+                        <li><span class="amount">1 1/2 tsp</span> baking soda</li>
+                        <li><span class="amount">3/4 tsp</span> salt</li>
+                        <li><span class="amount">2</span> large eggs</li>
+                        <li><span class="amount">2/3 cup</span> sour cream</li>
+                        <li><span class="amount">6 oz</span> semisweet chocolate chips</li>
+                        <li><span class="amount">6 tbsp</span> heavy cream</li>
+                        <li><span class="amount">1 tsp</span> light corn syrup</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="recipe-section instructions">
+                <h2>Instructions</h2>
+                <ol class="steps-list">
+                    <li>
+                        <div class="step-content">
+                            <span class="step-number">1</span>
+                            <p>Preheat oven to 350°F. Grease a 9-inch round cake pan and line the bottom with parchment paper.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="step-content">
+                            <span class="step-number">2</span>
+                            <p>Bring stout and butter to a simmer in a large saucepan over medium heat. Add cocoa powder and whisk until mixture is smooth. Cool slightly.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="step-content">
+                            <span class="step-number">3</span>
+                            <p>Whisk flour, sugar, baking soda, and salt in a large bowl. Using an electric mixer, beat eggs and sour cream in another large bowl until smooth. Add stout mixture to egg mixture and beat just to combine. Add flour mixture and beat briefly on slow speed. Using a rubber spatula, fold batter until completely combined. Pour batter into prepared pan. Bake cake until tester inserted into center comes out clean, about 35 minutes. Transfer cake to rack; cool completely in the pan, then turn cake out onto rack for frosting.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="step-content">
+                            <span class="step-number">4</span>
+                            <p>Place chocolate chips in a medium bowl. Bring cream and corn syrup to a simmer in a small saucepan; pour over chocolate chips. Let sit for 2 minutes; whisk until smooth. Let frosting sit at room temperature until slightly thickened, about 1 hour. Pour over cake; let stand until frosting is set, about 4 hours.</p>
+                        </div>
+                    </li>
+                </ol>
+            </section>
+        </article>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; 2025 Odin Recipes. All rights reserved.</p>
     </footer>
 </body>
 </html>

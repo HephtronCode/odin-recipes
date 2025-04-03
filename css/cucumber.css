@@ -1,15 +1,19 @@
-/* Modern CSS Reset and Base Styles */
+/* Modern CSS Reset and Variables */
 :root {
     --primary-color: #1a1a1a;
     --secondary-color: #4a4a4a;
-    --accent-color: #e65100;
+    --accent-color: #4caf50;  /* Green accent for the fresh theme */
     --background-color: #f8f9fa;
     --card-background: #ffffff;
     --border-radius: 12px;
     --spacing-unit: 1rem;
     --transition-speed: 0.3s;
+    --max-width: 1000px;
+    --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.05);
+    --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
+/* Base Styles */
 * {
     margin: 0;
     padding: 0;
@@ -26,14 +30,14 @@ body {
 /* Navigation */
 .navbar {
     background-color: var(--card-background);
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: var(--shadow-sm);
     position: sticky;
     top: 0;
     z-index: 1000;
 }
 
 .nav-content {
-    max-width: 1200px;
+    max-width: var(--max-width);
     margin: 0 auto;
     padding: 1rem var(--spacing-unit);
     display: flex;
@@ -41,27 +45,25 @@ body {
     align-items: center;
 }
 
-.nav-logo {
-    font-weight: 700;
-    font-size: 1.25rem;
+.nav-logo, .nav-link {
     color: var(--primary-color);
-    text-decoration: none;
-}
-
-.nav-link {
-    color: var(--secondary-color);
     text-decoration: none;
     font-weight: 500;
     transition: color var(--transition-speed);
 }
 
-.nav-link:hover {
+.nav-logo {
+    font-weight: 700;
+    font-size: 1.25rem;
+}
+
+.nav-logo:hover, .nav-link:hover {
     color: var(--accent-color);
 }
 
 /* Recipe Container */
 .recipe-container {
-    max-width: 1000px;
+    max-width: var(--max-width);
     margin: 2rem auto;
     padding: 0 var(--spacing-unit);
 }
@@ -69,7 +71,7 @@ body {
 .recipe-card {
     background-color: var(--card-background);
     border-radius: var(--border-radius);
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    box-shadow: var(--shadow-md);
     overflow: hidden;
 }
 
@@ -105,11 +107,6 @@ h1 {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    transition: transform var(--transition-speed);
-}
-
-.recipe-image:hover {
-    transform: scale(1.02);
 }
 
 /* Recipe Sections */
@@ -137,9 +134,10 @@ h2 {
     display: flex;
     align-items: center;
     gap: 0.5rem;
-    padding: 0.5rem;
+    padding: 0.75rem;
     background-color: #f8f9fa;
     border-radius: 6px;
+    font-size: 0.95rem;
 }
 
 .amount {
@@ -179,13 +177,22 @@ h2 {
 .site-footer {
     background-color: var(--primary-color);
     color: white;
-    text-align: center;
     padding: 2rem var(--spacing-unit);
     margin-top: 4rem;
 }
 
+.footer-content {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    text-align: center;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+
     .recipe-meta {
         flex-direction: column;
         gap: 0.5rem;
@@ -198,13 +205,17 @@ h2 {
     .ingredients-grid ul {
         grid-template-columns: 1fr;
     }
-
-    h1 {
-        font-size: 2rem;
-    }
 }
 
 @media (max-width: 480px) {
+    .recipe-header {
+        padding: 1.5rem var(--spacing-unit);
+    }
+
+    h1 {
+        font-size: 1.75rem;
+    }
+
     .recipe-image-container {
         height: 200px;
     }
@@ -218,4 +229,3 @@ h2 {
         margin: 0 auto;
     }
 }
-
